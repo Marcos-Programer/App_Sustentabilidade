@@ -1,3 +1,12 @@
 <resources>
+    // Contents
+    <string name="btn_home"> GoToHome </string>
+    <string name="btn_tipos"> GoToTipos </string>
+    <string name="btn_perfil"> GoToPerfil </string>
+
+    // Texts
     <string name="app_name">Grow Truffles</string>
+    <string name="main_titulo_curiosidade">Você Sabia?</string>
+    <string name="main_texto_curiosidade">Em 2022, 234.8 hectares de terras foram desmatados por hora; 5.636 hectares por dia. Desses, cerca de 3.267,5 hectares são da Amazônia. </string>
+    <string name="main_titulo_populares">Plantas Populares</string>
 </resources>
