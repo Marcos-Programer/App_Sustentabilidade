@@ -1,12 +1,34 @@
 <resources>
-    // Contents
+    // Contents (Description)
     <string name="btn_home"> GoToHome </string>
     <string name="btn_tipos"> GoToTipos </string>
     <string name="btn_perfil"> GoToPerfil </string>
+    <string name="btn_voltar"> ReturnToThePrevious </string>
+    <string name="img_planta"> Planta </string>
+    <string name="img_planta_tamanho"> Tamanho da Planta </string>
+    <string name="img_planta_temp"> Temperatura média </string>
+    <string name="img_planta_agua"> Quantidade de Agua </string>
 
-    // Texts
+    // Texts Globais
     <string name="app_name">Grow Truffles</string>
+
+    //Texts Activity Main
     <string name="main_titulo_curiosidade">Você Sabia?</string>
     <string name="main_texto_curiosidade">Em 2022, 234.8 hectares de terras foram desmatados por hora; 5.636 hectares por dia. Desses, cerca de 3.267,5 hectares são da Amazônia. </string>
     <string name="main_titulo_populares">Plantas Populares</string>
+    <string name="titulo_planta1">Lírio-Da-Paz</string>;
+    <string name="titulo_planta2">Evônimo-Do-Japão</string>
+    <string name="titulo_planta3">Bamdu-Da-Sorte</string>
+    <string name="titulo_planta4">Hera</string>
+
+    // Texts Activity Planta
+    <string name="plantas_texto_voltar"> Sobre a Planta </string>
+    <string name="texto_lirio_da_paz">O lírio-da-paz é uma planta de folhagem bem verde e brilhante, com ampla formação de arbustos. A flor é branca, semelhante a uma pétala, com um pequeno pendão internamente.
+    O lírio pode ser tanto uma planta de vaso quanto de solo. Como ele atinge tamanho médio, basta um recipiente ideal para as raízes terem espaço suficiente para se desenvolver, tal qual seria no chão.</string>
+    <string name="texto_evonimo_do_japao">O evônimo-do-japão é uma planta ornamental arbustiva bastante presente em ambientes externos e internos. É muito apreciado como cerca-viva, pois embeleza a área e dá privacidade. Na natureza, costuma ser encontrado em áreas próximas ao mar. É levemente tóxico e não deve ser ingerido.</string>
+    <string name="texto_bamdu_da_sorte">Uma tradição oriental diz que o Bambu da Sorte deve ser dado de presente em ocasiões que marquem um novo começo, como mudança de casa, casamento, nascimento de uma criança ou na conquista de um novo emprego. Além disso, na hora de presentear, amarre no Bambu da Sorte uma fita vermelha para atrair a boa saúde a quem recebe e ativar ainda mais os poderes místicos da planta.
+    O Bambu da Sorte é uma planta com diferentes tipos de modelagem, podendo assim ser incorporada na decoração de diferentes formas, uma vez que ela pode assumir formatos de corações, torres e espirais. Contudo, o Bambu da Sorte trançado ainda é o mais popular de todos.</string>
+    <string name="texto_hera">A Hera ou hera inglesa (Hedera helix L.) é uma planta originária da Europa Central e Ocidental. Na natureza, as folhas crescem agarradas em outras árvores e isso lhe rendeu a fama de planta trepadeira.
+    Quem sofre de alergias deve ter uma hera em casa, pois a planta tem a capacidade de purificar o ar. Ela filtra os gases poluentes, incluindo o benzeno, xileno e formaldeído. </string>
+
 </resources>

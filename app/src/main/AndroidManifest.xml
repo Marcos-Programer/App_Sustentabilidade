@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppSustentabilidade"
         tools:targetApi="31">
         <activity
+            android:name=".Descricao_Planta"
+            android:exported="false" />
+        <activity
             android:name=".Perfil"
             android:exported="false" />
         <activity

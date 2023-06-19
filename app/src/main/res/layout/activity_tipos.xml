@@ -8,22 +8,22 @@
     tools:context=".Tipos">
 
     <View
-        android:id="@+id/view4"
-        android:layout_width="411dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="608dp"
+        android:id="@+id/view_Logo"
+        android:layout_width="393dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="680dp"
         android:background="#00FFFFFF"
         android:backgroundTint="#FFB26A"
         android:backgroundTintMode="screen"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/navegation_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="420dp"
+        android:id="@+id/navegation_bar"
+        android:layout_width="0dp"
         android:layout_height="59dp"
         android:layout_marginTop="650dp"
         android:background="#00FFFFFF"
@@ -42,9 +42,10 @@
             android:id="@+id/img_btn_home"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
             android:adjustViewBounds="true"
             android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/btn_home"
             android:cropToPadding="false"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/home"
@@ -56,6 +57,7 @@
             android:layout_height="50dp"
             android:adjustViewBounds="true"
             android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/btn_tipos"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/tipos"
             tools:srcCompat="@drawable/tipos" />
@@ -64,11 +66,12 @@
             android:id="@+id/img_btn_perfil"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
             android:background="#00FFFFFF"
+            android:contentDescription="@string/btn_perfil"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/perfil"
+            tools:ignore="TouchTargetSizeCheck"
             tools:srcCompat="@drawable/perfil" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

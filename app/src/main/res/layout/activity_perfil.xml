@@ -7,7 +7,7 @@
     tools:context=".Perfil">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/navegation_bar"
         android:layout_width="420dp"
         android:layout_height="59dp"
         android:layout_marginTop="650dp"
@@ -65,7 +65,7 @@
         android:background="#00FFFFFF"
         android:backgroundTint="#FFB26A"
         android:backgroundTintMode="screen"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/navegation_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.398"
         app:layout_constraintStart_toStartOf="parent"

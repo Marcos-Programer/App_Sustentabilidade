@@ -14,177 +14,253 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <LinearLayout
-            android:id="@+id/linearLayout6"
-            android:layout_width="0dp"
-            android:layout_height="250dp"
-            android:layout_marginTop="65dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/layout_populares"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
+        <ScrollView
+            android:id="@+id/scr_Main"
+            android:layout_width="391dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="59dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-            <LinearLayout
-                android:layout_width="230dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="10dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/txt_titulo"
-                    android:layout_width="175dp"
-                    android:layout_height="37dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginBottom="20dp"
-                    android:fontFamily="sans-serif-black"
-                    android:text="@string/main_titulo_curiosidade"
-                    android:textSize="24sp"
-                    tools:layout_editor_absoluteX="30dp"
-                    tools:layout_editor_absoluteY="94dp" />
-
-                <TextView
-                    android:id="@+id/txt_desc"
-                    android:layout_width="193dp"
-                    android:layout_height="102dp"
-                    android:layout_marginStart="25dp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="@string/main_texto_curiosidade"
-                    android:textAlignment="viewStart"
-                    android:textSize="16sp"
-                    tools:layout_editor_absoluteX="30dp"
-                    tools:layout_editor_absoluteY="147dp" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="186dp"
-                android:layout_height="210dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layout_populares"
-            android:layout_width="0dp"
-            android:layout_height="230dp"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+            tools:layout_editor_absoluteX="1dp"
             tools:ignore="MissingConstraints">
 
-            <TextView
-                android:id="@+id/txtpopular"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
-                android:backgroundTint="#000000"
-                android:backgroundTintMode="screen"
-                android:fontFamily="sans-serif-black"
-                android:foregroundTint="#00FFFFFF"
-                android:text="@string/main_titulo_populares"
-                android:textSize="24sp"
-                app:drawableTint="#12FFFFFF"
-                tools:layout_editor_absoluteX="30dp"
-                tools:layout_editor_absoluteY="357dp" />
-
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="horizontal"
-                tools:layout_editor_absoluteX="30dp"
-                tools:layout_editor_absoluteY="412dp">
+                android:id="@+id/Layout_Base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
 
                 <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="10dp"
-                    android:background="#00FFFFFF"
-                    android:backgroundTint="#000000"
-                    android:backgroundTintMode="screen"
-                    android:orientation="vertical">
+                    android:id="@+id/Layout_Banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/Layout_Populares"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <LinearLayout
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_titulo"
+                            android:layout_width="175dp"
+                            android:layout_height="37dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="@string/main_titulo_curiosidade"
+                            android:textSize="24sp"
+                            tools:layout_editor_absoluteX="30dp"
+                            tools:layout_editor_absoluteY="94dp" />
+
+                        <TextView
+                            android:id="@+id/txt_desc"
+                            android:layout_width="193dp"
+                            android:layout_height="102dp"
+                            android:layout_marginStart="25dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="@string/main_texto_curiosidade"
+                            android:textAlignment="viewStart"
+                            android:textSize="16sp"
+                            tools:layout_editor_absoluteX="30dp"
+                            tools:layout_editor_absoluteY="147dp" />
+                    </LinearLayout>
 
                     <ImageView
-                        android:id="@+id/img_planta1"
-                        android:layout_width="match_parent"
-                        android:layout_height="110dp"
-                        android:layout_margin="0dp"
-                        app:srcCompat="@drawable/perfil" />
-
-                    <TextView
-                        android:id="@+id/txt_nome_planta1"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginVertical="20dp"
-                        android:text="TextView" />
+                        android:id="@+id/imageView2"
+                        android:layout_width="186dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        tools:srcCompat="@tools:sample/avatars" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="#00FFFFFF"
-                    android:backgroundTint="#000000"
-                    android:backgroundTintMode="screen"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/img_planta2"
-                        android:layout_width="match_parent"
-                        android:layout_height="110dp"
-                        android:layout_margin="0dp"
-                        app:srcCompat="@drawable/perfil" />
+                    android:id="@+id/Layout_Populares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout_Banner"
+                    tools:ignore="MissingConstraints">
 
                     <TextView
-                        android:id="@+id/txt_nome_planta2"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginVertical="20dp"
-                        android:text="TextView" />
-                </LinearLayout>
+                        android:id="@+id/txtpopular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:backgroundTint="#000000"
+                        android:backgroundTintMode="screen"
+                        android:fontFamily="sans-serif-black"
+                        android:foregroundTint="#00FFFFFF"
+                        android:text="@string/main_titulo_populares"
+                        android:textSize="24sp"
+                        app:drawableTint="#12FFFFFF"
+                        tools:layout_editor_absoluteX="30dp"
+                        tools:layout_editor_absoluteY="357dp" />
 
-                <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:background="#00FFFFFF"
-                    android:backgroundTint="#000000"
-                    android:backgroundTintMode="screen"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/img_planta3"
+                    <HorizontalScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
-                        android:layout_margin="0dp"
-                        app:srcCompat="@drawable/perfil" />
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:fadeScrollbars="true">
 
-                    <TextView
-                        android:id="@+id/txt_nome_planta3"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginVertical="20dp"
-                        android:text="TextView" />
+                        <LinearLayout
+                            android:layout_width="400dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            tools:layout_editor_absoluteX="30dp"
+                            tools:layout_editor_absoluteY="412dp">
+
+                            <LinearLayout
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="20dp"
+                                android:background="#00FFFFFF"
+                                android:backgroundTint="#DFDFDF"
+                                android:backgroundTintMode="screen"
+                                android:contentDescription="@string/titulo_planta1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_planta1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:layout_margin="0dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/titulo_planta1"
+                                    android:cropToPadding="true"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/lirio"
+                                    tools:ignore="DuplicateIds" />
+
+                                <TextView
+                                    android:id="@+id/txt_nome_planta1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginVertical="20dp"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="@string/titulo_planta1"
+                                    android:textSize="16sp"
+                                    tools:ignore="DuplicateIds" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="20dp"
+                                android:background="#00FFFFFF"
+                                android:backgroundTint="#000000"
+                                android:backgroundTintMode="screen"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_planta2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:layout_margin="0dp"
+                                    android:contentDescription="@string/titulo_planta2"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/ivone"
+                                    tools:ignore="DuplicateIds" />
+
+                                <TextView
+                                    android:id="@+id/txt_titulo_planta"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginVertical="20dp"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="@string/titulo_planta2"
+                                    tools:ignore="DuplicateIds" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="20dp"
+                                android:background="#00FFFFFF"
+                                android:backgroundTint="#000000"
+                                android:backgroundTintMode="screen"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_planta3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:layout_margin="0dp"
+                                    android:contentDescription="@string/titulo_planta3"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/bambu"
+                                    tools:ignore="DuplicateIds" />
+
+                                <TextView
+                                    android:id="@+id/txt_nome_planta3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginVertical="20dp"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="@string/titulo_planta3"
+                                    tools:ignore="DuplicateIds" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:background="#00FFFFFF"
+                                android:backgroundTint="#000000"
+                                android:backgroundTintMode="screen"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_planta4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:layout_margin="0dp"
+                                    android:contentDescription="@string/titulo_planta4"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/hera"
+                                    tools:ignore="DuplicateIds" />
+
+                                <TextView
+                                    android:id="@+id/txt_nome_planta4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginVertical="20dp"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="@string/titulo_planta4"
+                                    tools:ignore="DuplicateIds" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
                 </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-
+        </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/navegation_bar"
         android:layout_width="0dp"
         android:layout_height="59dp"
         android:layout_marginTop="650dp"
@@ -204,9 +280,10 @@
             android:id="@+id/img_btn_home"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
             android:adjustViewBounds="true"
             android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/btn_home"
             android:cropToPadding="false"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/home"
@@ -218,6 +295,7 @@
             android:layout_height="50dp"
             android:adjustViewBounds="true"
             android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/btn_tipos"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/tipos"
             tools:srcCompat="@drawable/tipos" />
@@ -226,22 +304,24 @@
             android:id="@+id/img_btn_perfil"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
             android:background="#00FFFFFF"
+            android:contentDescription="@string/btn_perfil"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/perfil"
+            tools:ignore="TouchTargetSizeCheck"
             tools:srcCompat="@drawable/perfil" />
     </LinearLayout>
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/View_Logo"
         android:layout_width="393dp"
         android:layout_height="70dp"
         android:layout_marginBottom="1490dp"
         android:background="#00FFFFFF"
         android:backgroundTint="#FFB26A"
         android:backgroundTintMode="screen"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/navegation_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
