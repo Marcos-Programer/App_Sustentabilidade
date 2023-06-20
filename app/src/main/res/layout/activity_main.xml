@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -20,10 +21,13 @@
             android:layout_height="0dp"
             android:layout_marginTop="70dp"
             android:layout_marginBottom="59dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="screen"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="1dp"
-            tools:ignore="MissingConstraints">
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp">
 
             <LinearLayout
                 android:id="@+id/Layout_Base"
@@ -47,46 +51,51 @@
                     app:layout_constraintVertical_bias="0.0">
 
                     <LinearLayout
-                        android:layout_width="230dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginEnd="10dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/txt_titulo"
-                            android:layout_width="175dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="37dp"
                             android:layout_marginStart="25dp"
                             android:layout_marginTop="40dp"
                             android:layout_marginBottom="20dp"
                             android:fontFamily="sans-serif-black"
                             android:text="@string/main_titulo_curiosidade"
-                            android:textSize="24sp"
+                            android:textSize="28sp"
+                            tools:ignore="TextSizeCheck"
                             tools:layout_editor_absoluteX="30dp"
                             tools:layout_editor_absoluteY="94dp" />
 
                         <TextView
                             android:id="@+id/txt_desc"
-                            android:layout_width="193dp"
-                            android:layout_height="102dp"
+                            android:layout_width="154dp"
+                            android:layout_height="133dp"
                             android:layout_marginStart="25dp"
                             android:fontFamily="sans-serif-condensed"
                             android:text="@string/main_texto_curiosidade"
-                            android:textAlignment="viewStart"
+                            android:textAlignment="gravity"
                             android:textSize="16sp"
+                            tools:ignore="TextSizeCheck"
                             tools:layout_editor_absoluteX="30dp"
                             tools:layout_editor_absoluteY="147dp" />
                     </LinearLayout>
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/img_banner"
                         android:layout_width="186dp"
                         android:layout_height="210dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="20dp"
                         android:layout_weight="1"
-                        tools:srcCompat="@tools:sample/avatars" />
+                        android:contentDescription="@string/img_banner"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@drawable/lorax" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -151,7 +160,7 @@
                                     android:cropToPadding="true"
                                     android:scaleType="fitXY"
                                     app:srcCompat="@drawable/lirio"
-                                    tools:ignore="DuplicateIds" />
+                                    tools:ignore="DuplicateIds,ImageContrastCheck,ImageContrastCheck" />
 
                                 <TextView
                                     android:id="@+id/txt_nome_planta1"
@@ -182,7 +191,7 @@
                                     android:contentDescription="@string/titulo_planta2"
                                     android:scaleType="fitXY"
                                     app:srcCompat="@drawable/ivone"
-                                    tools:ignore="DuplicateIds" />
+                                    tools:ignore="DuplicateIds,ImageContrastCheck" />
 
                                 <TextView
                                     android:id="@+id/txt_titulo_planta"
@@ -191,7 +200,7 @@
                                     android:layout_marginVertical="20dp"
                                     android:gravity="center_horizontal|center_vertical"
                                     android:text="@string/titulo_planta2"
-                                    tools:ignore="DuplicateIds" />
+                                    tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -211,7 +220,7 @@
                                     android:contentDescription="@string/titulo_planta3"
                                     android:scaleType="fitXY"
                                     app:srcCompat="@drawable/bambu"
-                                    tools:ignore="DuplicateIds" />
+                                    tools:ignore="DuplicateIds,ImageContrastCheck" />
 
                                 <TextView
                                     android:id="@+id/txt_nome_planta3"
@@ -220,7 +229,7 @@
                                     android:layout_marginVertical="20dp"
                                     android:gravity="center_horizontal|center_vertical"
                                     android:text="@string/titulo_planta3"
-                                    tools:ignore="DuplicateIds" />
+                                    tools:ignore="DuplicateIds,TextContrastCheck" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -325,6 +334,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:ignore="VisualLintBounds" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

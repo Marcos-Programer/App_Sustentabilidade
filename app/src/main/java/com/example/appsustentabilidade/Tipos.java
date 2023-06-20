@@ -14,10 +14,13 @@ public class Tipos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tipos);
 
+        // Instânciando os objetos
         btn_home = findViewById(R.id.img_btn_home);
         btn_tipos = findViewById(R.id.img_btn_tipo);
         btn_perfil = findViewById(R.id.img_btn_perfil);
 
+
+        // Botões NavBar
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
