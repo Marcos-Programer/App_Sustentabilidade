@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Descricao_Planta">
+    tools:context=".Descricao_Planta1">
 
     <LinearLayout
         android:id="@+id/Layout_Voltar"
@@ -13,69 +13,72 @@
         android:background="#00FFFFFF"
         android:backgroundTint="#FFB26A"
         android:backgroundTintMode="screen"
-        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout"
         tools:ignore="UnknownIdInLayout">
 
-        <ImageButton
+
+        <ImageView
             android:id="@+id/img_btn_voltar"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="25dp"
-            android:contentDescription="@string/btn_voltar"
-            app:srcCompat="@android:drawable/ic_media_rew"
-            tools:ignore="ImageContrastCheck,TouchTargetSizeCheck" />
+            app:srcCompat="@drawable/seta_voltar" />
 
         <TextView
             android:id="@+id/txt_descricao_pag"
-            android:layout_width="130dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="130dp"
-            android:layout_marginTop="-40dp"
+            android:layout_marginStart="90dp"
             android:fontFamily="sans-serif"
             android:text="@string/plantas_texto_voltar"
             android:textSize="18sp"
             tools:ignore="TextSizeCheck" />
+
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/Layout_Base"
-        android:layout_width="0dp"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/navegation_bar"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Layout_Voltar">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/Layout_Conteudo"
             android:layout_width="match_parent"
-            android:layout_height="660dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="25dp"
             android:orientation="vertical"
             tools:ignore="UselessParent,VisualLintBounds">
 
             <ImageView
                 android:id="@+id/img_planta"
-                android:layout_width="300dp"
-                android:layout_height="300dp"
+                android:layout_width="match_parent"
+                android:layout_height="490dp"
                 android:layout_gravity="center_horizontal"
                 android:adjustViewBounds="false"
                 android:contentDescription="@string/img_planta"
-                tools:ignore="ImageContrastCheck"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/lirio"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/txt_titulo_planta"
-                android:layout_width="300dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/titulo_planta1"
                 android:textSize="40sp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -84,6 +87,7 @@
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -93,6 +97,7 @@
                     android:layout_marginEnd="20dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/img_planta_tamanho"
+                    tools:ignore="ImageContrastCheck"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <ImageView
@@ -123,12 +128,13 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="25dp"
+                android:layout_marginBottom="60dp"
+                android:text="@string/texto_lirio_da_paz"
                 android:textSize="16sp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
-
-    </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:id="@+id/navegation_bar"
@@ -183,4 +189,5 @@
             tools:ignore="TouchTargetSizeCheck"
             tools:srcCompat="@drawable/perfil" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

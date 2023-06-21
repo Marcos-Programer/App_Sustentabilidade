@@ -10,10 +10,6 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String ENVIAR_TITULO = null;
-    public static final String ENVIAR_DETALHE = null;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,53 +28,29 @@ public class MainActivity extends AppCompatActivity {
         img_lirio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent enviar_dados = new Intent(MainActivity.this, Descricao_Planta.class);
-
-                String titulo = getString(R.string.titulo_planta1);
-                String detalhe = getString(R.string.texto_lirio_da_paz);
-
-                enviar_dados.putExtra(ENVIAR_TITULO, titulo);
-                enviar_dados.putExtra(ENVIAR_DETALHE, detalhe);
-                startActivity(enviar_dados);
+                Intent abrir_descricao = new Intent(MainActivity.this, Descricao_Planta1.class);
+                startActivity(abrir_descricao);
             }
         });
         img_evonimo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent enviar_dados = new Intent(MainActivity.this, Descricao_Planta.class);
-
-                String titulo = getString(R.string.titulo_planta2);
-                String detalhe = getString(R.string.texto_evonimo_do_japao);
-
-                enviar_dados.putExtra(ENVIAR_TITULO, titulo);
-                enviar_dados.putExtra(ENVIAR_DETALHE, detalhe);
+                Intent enviar_dados = new Intent(MainActivity.this, Descricao_Planta2.class);
                 startActivity(enviar_dados);
             }
         });
         img_bambu.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent enviar_dados = new Intent(MainActivity.this, Descricao_Planta.class);
-
-                String titulo = getString(R.string.titulo_planta3);
-                String detalhe = getString(R.string.texto_bamdu_da_sorte);
-
-                enviar_dados.putExtra(ENVIAR_TITULO, titulo);
-                enviar_dados.putExtra(ENVIAR_DETALHE, detalhe);
-                startActivity(enviar_dados);
+                Intent abrir_descricao = new Intent(MainActivity.this, Descricao_Planta3.class);
+                startActivity(abrir_descricao);
             }
         });
         img_hera.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent enviar_dados = new Intent(MainActivity.this, Descricao_Planta.class);
-
-                String titulo = getString(R.string.titulo_planta4);
-                String detalhe = getString(R.string.texto_hera);
-
-                enviar_dados.putExtra(ENVIAR_TITULO, titulo);
-                enviar_dados.putExtra(ENVIAR_DETALHE, detalhe);
-                startActivity(enviar_dados);
+                Intent abrir_descricao = new Intent(MainActivity.this, Descricao_Planta4.class);
+                startActivity(abrir_descricao);
             }
         });
 

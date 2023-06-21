@@ -7,8 +7,22 @@
     tools:context=".Perfil">
 
     <LinearLayout
+        android:id="@+id/Layout_Logo_Perfil"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="688dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#FFB26A"
+        android:backgroundTintMode="screen"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/navegation_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <LinearLayout
         android:id="@+id/navegation_bar"
-        android:layout_width="420dp"
+        android:layout_width="0dp"
         android:layout_height="59dp"
         android:layout_marginTop="650dp"
         android:background="#00FFFFFF"
@@ -27,9 +41,10 @@
             android:id="@+id/img_btn_home"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
             android:adjustViewBounds="true"
             android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/btn_home"
             android:cropToPadding="false"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/home"
@@ -41,6 +56,7 @@
             android:layout_height="50dp"
             android:adjustViewBounds="true"
             android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/btn_tipos"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/tipos"
             tools:srcCompat="@drawable/tipos" />
@@ -49,27 +65,66 @@
             android:id="@+id/img_btn_perfil"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
             android:background="#00FFFFFF"
+            android:contentDescription="@string/btn_perfil"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/perfil"
+            tools:ignore="TouchTargetSizeCheck"
             tools:srcCompat="@drawable/perfil" />
     </LinearLayout>
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="411dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="612dp"
-        android:layout_weight="1"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#FFB26A"
-        android:backgroundTintMode="screen"
+    <LinearLayout
+        android:id="@+id/Layout_Base_Perfil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/navegation_bar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.398"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/Layout_Logo_Perfil">
 
+        <LinearLayout
+            android:id="@+id/Layout_Base_Foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent,VisualLintBounds">
+
+            <ImageView
+                android:id="@+id/img_foto_de_perfil"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/img_de_perfil"
+                app:srcCompat="@drawable/perfil" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_nome_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="TextView"
+                    android:textSize="22sp"
+                    tools:ignore="VisualLintBounds" />
+
+                <TextView
+                    android:id="@+id/id_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="TextView" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

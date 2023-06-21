@@ -115,7 +115,7 @@
                 android:id="@+id/img_resistente_planta1"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
-                tools:srcCompat="@drawable/zamioculca" />
+                app:srcCompat="@drawable/zamioculca" />
 
             <TextView
                 android:id="@+id/txt_resistente_planta1"
@@ -140,7 +140,7 @@
                 android:id="@+id/img_resistente_planta2"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
-                tools:srcCompat="@drawable/camedorea" />
+                app:srcCompat="@drawable/camedorea" />
 
             <TextView
                 android:id="@+id/txt_resistente_planta2"
