@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="titulo">#C86FA4</color>
+    <color name="titulo_roxo_claro">#D497BB</color>
+    <color name="sub_fundo">#F6D3B3</color>
+    <color name="titulo_1">#699DE4</color>
+    <color name="marrom">#A95422</color>
 </resources>

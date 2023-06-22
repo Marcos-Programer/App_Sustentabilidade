@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AppSustentabilidade"
         tools:targetApi="31">
         <activity
+            android:name=".Descricao_Planta6"
+            android:exported="false" />
+        <activity
+            android:name=".Descricao_Planta5"
+            android:exported="false" />
+        <activity
             android:name=".Descricao_Planta4"
             android:exported="false" />
         <activity

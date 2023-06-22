@@ -4,12 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FFFFFF"
+    android:background="#00FFFFFF"
+    android:backgroundTint="@color/sub_fundo"
+    android:backgroundTintMode="screen"
     tools:context=".Tipos">
 
     <LinearLayout
-        android:layout_width="391dp"
-        android:layout_height="677dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="screen"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/navegation_bar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +29,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-black"
             android:text="@string/titulo_tipos"
+            android:textColor="@color/titulo_1"
             android:textSize="25sp" />
 
         <LinearLayout
@@ -37,26 +43,29 @@
 
             <ImageView
                 android:id="@+id/img_flores"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="70dp"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/flores" />
 
             <ImageView
                 android:id="@+id/img_medicina"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="70dp"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/plantasmedicinais" />
 
             <ImageView
                 android:id="@+id/img_pequenas"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/plantas_pequenas" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,27 +79,27 @@
             tools:ignore="DuplicateIds">
 
             <ImageView
-                android:id="@+id/img_flores"
-                android:layout_width="wrap_content"
+                android:id="@+id/img_exotico"
+                android:layout_width="200dp"
                 android:layout_height="70dp"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                app:srcCompat="@drawable/plantas_exoticas" />
 
             <ImageView
-                android:id="@+id/img_medicina"
-                android:layout_width="wrap_content"
+                android:id="@+id/img_veneno"
+                android:layout_width="200dp"
                 android:layout_height="70dp"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                app:srcCompat="@drawable/plantas_venenosas" />
 
             <ImageView
-                android:id="@+id/img_pequenas"
-                android:layout_width="wrap_content"
+                android:id="@+id/img_outros"
+                android:layout_width="200dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                app:srcCompat="@drawable/outras" />
         </LinearLayout>
 
         <TextView
@@ -101,20 +110,25 @@
             android:layout_marginTop="40dp"
             android:fontFamily="sans-serif-black"
             android:text="@string/titulo_resistente"
+            android:textColor="@color/titulo_1"
             android:textSize="25sp" />
 
         <LinearLayout
             android:id="@+id/Linear_resistente_planta1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_margin="25dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="@color/sub_fundo"
+            android:backgroundTintMode="screen"
             android:orientation="horizontal"
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/img_resistente_planta1"
                 android:layout_width="100dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
                 app:srcCompat="@drawable/zamioculca" />
 
             <TextView
@@ -130,16 +144,20 @@
         <LinearLayout
             android:id="@+id/Linear_resistente_planta2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="@color/sub_fundo"
+            android:backgroundTintMode="screen"
             android:orientation="horizontal"
             tools:ignore="DuplicateIds,UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/img_resistente_planta2"
                 android:layout_width="100dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
                 app:srcCompat="@drawable/camedorea" />
 
             <TextView
@@ -157,11 +175,12 @@
     <View
         android:id="@+id/view_Logo"
         android:layout_width="393dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="680dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="700dp"
         android:background="#00FFFFFF"
-        android:backgroundTint="#FFB26A"
+        android:backgroundTint="@color/sub_fundo"
         android:backgroundTintMode="screen"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/navegation_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -175,7 +194,7 @@
         android:layout_height="59dp"
         android:layout_marginTop="650dp"
         android:background="#00FFFFFF"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/sub_fundo"
         android:backgroundTintMode="screen"
         android:gravity="center_horizontal|center_vertical"
         android:orientation="horizontal"

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class Tipos extends AppCompatActivity {
 
@@ -18,6 +19,24 @@ public class Tipos extends AppCompatActivity {
         btn_home = findViewById(R.id.img_btn_home);
         btn_tipos = findViewById(R.id.img_btn_tipo);
         btn_perfil = findViewById(R.id.img_btn_perfil);
+        img_planta1 = findViewById(R.id.img_resistente_planta1);
+        img_planta2 = findViewById(R.id.img_resistente_planta2);
+
+        // Plantas
+        img_planta1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent abrir_descricao = new Intent(Tipos.this, Descricao_Planta5.class);
+                startActivity(abrir_descricao);
+            }
+        });
+        img_planta2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent abrir_descricao = new Intent(Tipos.this, Descricao_Planta6.class);
+                startActivity(abrir_descricao);
+            }
+        });
 
 
         // Botões NavBar
@@ -48,4 +67,6 @@ public class Tipos extends AppCompatActivity {
     ImageButton btn_home;
     ImageButton btn_tipos;
     ImageButton btn_perfil;
+    ImageView img_planta1;
+    ImageView img_planta2;
 }

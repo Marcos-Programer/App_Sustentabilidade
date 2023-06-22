@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Descricao_Planta2">
+    tools:context=".Descricao_Planta5">
 
     <LinearLayout
         android:id="@+id/Layout_Voltar"
@@ -36,6 +36,7 @@
             android:fontFamily="sans-serif"
             android:text="@string/plantas_texto_voltar"
             android:textSize="18sp"
+            android:textColor="@color/white"
             tools:ignore="TextSizeCheck" />
 
     </LinearLayout>
@@ -49,7 +50,9 @@
         android:backgroundTint="#FFFFFF"
         android:backgroundTintMode="screen"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Layout_Voltar">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/Layout_Conteudo"
@@ -69,7 +72,7 @@
                 android:adjustViewBounds="false"
                 android:contentDescription="@string/img_planta"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/ivone"
+                app:srcCompat="@drawable/desczamioculca"
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
@@ -79,7 +82,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:gravity="center_horizontal"
-                android:text="@string/titulo_planta2"
+                android:text="@string/nome_planta_resistente1"
                 android:textSize="40sp"
                 android:textColor="@color/titulo_1"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -125,15 +128,15 @@
             <TextView
                 android:id="@+id/txt_texto_planta"
                 android:layout_width="298dp"
-                android:layout_height="152dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="25dp"
-                android:layout_marginBottom="100dp"
-                android:text="@string/texto_evonimo_do_japao"
-                android:textSize="16sp"
+                android:layout_marginBottom="60dp"
+                android:text="@string/texto_zamioculca"
                 android:textColor="@color/titulo_roxo_claro"
+                android:textSize="16sp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>

@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:background="#00FFFFFF"
-        android:backgroundTint="#FFB26A"
+        android:backgroundTint="@color/sub_fundo"
         android:backgroundTintMode="screen"
         android:gravity="center_vertical"
         android:orientation="horizontal"
@@ -36,6 +36,7 @@
             android:fontFamily="sans-serif"
             android:text="@string/plantas_texto_voltar"
             android:textSize="18sp"
+            android:textColor="@color/white"
             tools:ignore="TextSizeCheck" />
 
     </LinearLayout>
@@ -45,6 +46,9 @@
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="59dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="screen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -78,6 +82,7 @@
                 android:gravity="center_horizontal"
                 android:text="@string/titulo_planta3"
                 android:textSize="40sp"
+                android:textColor="@color/titulo_1"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <LinearLayout
@@ -95,8 +100,8 @@
                     android:layout_marginEnd="20dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/img_planta_tamanho"
-                    tools:ignore="ImageContrastCheck"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    app:srcCompat="@drawable/tamanho"
+                    tools:ignore="ImageContrastCheck" />
 
                 <ImageView
                     android:id="@+id/img_planta_temperatura"
@@ -105,8 +110,8 @@
                     android:layout_marginEnd="20dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/img_planta_temp"
-                    tools:ignore="ImageContrastCheck"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    app:srcCompat="@drawable/temperatura"
+                    tools:ignore="ImageContrastCheck" />
 
                 <ImageView
                     android:id="@+id/img_planta_agua"
@@ -114,8 +119,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:contentDescription="@string/img_planta_agua"
-                    tools:ignore="ImageContrastCheck"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    app:srcCompat="@drawable/agua"
+                    tools:ignore="ImageContrastCheck" />
             </LinearLayout>
 
             <TextView
@@ -129,6 +134,7 @@
                 android:layout_marginBottom="60dp"
                 android:text="@string/texto_bamdu_da_sorte"
                 android:textSize="16sp"
+                android:textColor="@color/titulo_roxo_claro"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
@@ -140,7 +146,7 @@
         android:layout_height="59dp"
         android:layout_marginTop="650dp"
         android:background="#00FFFFFF"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/sub_fundo"
         android:backgroundTintMode="screen"
         android:gravity="center_horizontal|center_vertical"
         android:orientation="horizontal"

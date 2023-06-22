@@ -29,6 +29,25 @@
     <string name="nome_planta_resistente1">Zamioculcas</string>
     <string name="nome_planta_resistente2">Camedórea-elegante</string>
 
+    // Text Activity Perfil
+    <string name="nome_usuario">Não Cadastrado</string>
+    <string name="id_usuario">Cadastre-se</string>
+    <string name="show_datas">Seus Dados</string>
+    <string name="titulo_cadastro">Cadastre-se</string>
+    <string name="nome">Digite seu nome: </string>
+    <string name="usuario">Crie um nome de usuário: </string>
+    <string name="telefone">Digite o número de telefone: </string>
+    <string name="email">Digite um email: </string>
+    <string name="senha">Defina uma senha: </string>
+    <string name="edit_text_nome">Nome completo</string>
+    <string name="edit_text_usuario">Ex: @M13f_Y</string>
+    <string name="edit_text_email">example@email.com</string>
+    <string name="edit_text_senha">Senha com oito digitos</string>
+    <string name="btn_cadastro">Cadastrar</string>
+    <string name="nome_cadastrado">Seu nome de usuário é: </string>
+    <string name="usuario_cadastrado">Seu código de usuário é: </string>
+    <string name="email_cadastrado">Seu email é: </string>
+
 
     // Texts Activity Planta
     <string name="plantas_texto_voltar"> Sobre a Planta </string>

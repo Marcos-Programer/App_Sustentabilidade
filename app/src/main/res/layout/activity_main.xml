@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00FFFFFF"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:backgroundTint="@color/sub_fundo"
+        android:backgroundTintMode="screen"
         app:layout_constraintStart_toStartOf="parent"
         tools:context=".MainActivity"
         tools:layout_editor_absoluteY="0dp">
@@ -18,7 +22,7 @@
             android:id="@+id/scr_Main"
             android:layout_width="391dp"
             android:layout_height="0dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="59dp"
             android:background="#00FFFFFF"
             android:backgroundTint="#FFFFFF"
@@ -62,8 +66,10 @@
                             android:layout_marginStart="25dp"
                             android:layout_marginTop="40dp"
                             android:layout_marginBottom="20dp"
+                            android:backgroundTintMode="screen"
                             android:fontFamily="sans-serif-black"
                             android:text="@string/main_titulo_curiosidade"
+                            android:textColor="@color/titulo_1"
                             android:textSize="28sp"
                             tools:ignore="TextSizeCheck"
                             tools:layout_editor_absoluteX="30dp"
@@ -74,6 +80,7 @@
                             android:layout_width="154dp"
                             android:layout_height="133dp"
                             android:layout_marginStart="25dp"
+                            android:backgroundTint="@color/black"
                             android:fontFamily="sans-serif-condensed"
                             android:text="@string/main_texto_curiosidade"
                             android:textAlignment="gravity"
@@ -112,11 +119,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="25dp"
-                        android:backgroundTint="#000000"
                         android:backgroundTintMode="screen"
                         android:fontFamily="sans-serif-black"
                         android:foregroundTint="#00FFFFFF"
                         android:text="@string/main_titulo_populares"
+                        android:textColor="@color/titulo_1"
                         android:textSize="24sp"
                         app:drawableTint="#12FFFFFF"
                         tools:layout_editor_absoluteX="30dp"
@@ -143,7 +150,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="20dp"
                                 android:background="#00FFFFFF"
-                                android:backgroundTint="#DFDFDF"
+                                android:backgroundTint="@color/sub_fundo"
                                 android:backgroundTintMode="screen"
                                 android:contentDescription="@string/titulo_planta1"
                                 android:orientation="vertical">
@@ -163,12 +170,13 @@
                                 <TextView
                                     android:id="@+id/txt_nome_planta1"
                                     android:layout_width="match_parent"
-                                    android:layout_height="45dp"
+                                    android:layout_height="42dp"
                                     android:layout_gravity="center_horizontal"
                                     android:layout_marginVertical="20dp"
                                     android:gravity="center_horizontal|center_vertical"
                                     android:text="@string/titulo_planta1"
                                     android:textSize="16sp"
+                                    android:textColor="@color/titulo_1"
                                     tools:ignore="DuplicateIds" />
                             </LinearLayout>
 
@@ -177,7 +185,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="20dp"
                                 android:background="#00FFFFFF"
-                                android:backgroundTint="#000000"
+                                android:backgroundTint="@color/sub_fundo"
                                 android:backgroundTintMode="screen"
                                 android:orientation="vertical">
 
@@ -198,6 +206,7 @@
                                     android:layout_marginVertical="20dp"
                                     android:gravity="center_horizontal|center_vertical"
                                     android:text="@string/titulo_planta2"
+                                    android:textColor="@color/titulo_1"
                                     tools:ignore="DuplicateIds,TextContrastCheck,TextContrastCheck" />
                             </LinearLayout>
 
@@ -206,7 +215,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginEnd="20dp"
                                 android:background="#00FFFFFF"
-                                android:backgroundTint="#000000"
+                                android:backgroundTint="@color/sub_fundo"
                                 android:backgroundTintMode="screen"
                                 android:orientation="vertical">
 
@@ -227,6 +236,7 @@
                                     android:layout_marginVertical="20dp"
                                     android:gravity="center_horizontal|center_vertical"
                                     android:text="@string/titulo_planta3"
+                                    android:textColor="@color/titulo_1"
                                     tools:ignore="DuplicateIds,TextContrastCheck" />
                             </LinearLayout>
 
@@ -234,7 +244,7 @@
                                 android:layout_width="140dp"
                                 android:layout_height="match_parent"
                                 android:background="#00FFFFFF"
-                                android:backgroundTint="#000000"
+                                android:backgroundTint="@color/sub_fundo"
                                 android:backgroundTintMode="screen"
                                 android:orientation="vertical">
 
@@ -255,6 +265,7 @@
                                     android:layout_marginVertical="20dp"
                                     android:gravity="center_horizontal|center_vertical"
                                     android:text="@string/titulo_planta4"
+                                    android:textColor="@color/titulo_1"
                                     tools:ignore="DuplicateIds" />
                             </LinearLayout>
 
@@ -272,7 +283,7 @@
         android:layout_height="59dp"
         android:layout_marginTop="650dp"
         android:background="#00FFFFFF"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/sub_fundo"
         android:backgroundTintMode="screen"
         android:gravity="center_horizontal|center_vertical"
         android:orientation="horizontal"
@@ -320,14 +331,15 @@
             tools:srcCompat="@drawable/perfil" />
     </LinearLayout>
 
-    <View
+    <LinearLayout
         android:id="@+id/View_Logo"
         android:layout_width="393dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="1490dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="1510dp"
         android:background="#00FFFFFF"
-        android:backgroundTint="#FFB26A"
+        android:backgroundTint="@color/sub_fundo"
         android:backgroundTintMode="screen"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/navegation_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
